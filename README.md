@@ -14,7 +14,7 @@ Desafio iOS
 
 ### Inicial
 
-![](https://raw.githubusercontent.com/grupofleury/ios-desafio/master/layout_teste.png)
+![](https://raw.githubusercontent.com/feliperius/ios-desafio/master/layout_teste.png)
 
 ## API
 
