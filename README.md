@@ -8,7 +8,6 @@ Desafio iOS
 - Feedback para o usuário e fluidez na navegação ganham pontos
 - Teste unitário -> Qualquer framework, mas explique no readme as vantagens.
 - Faça um readme informando particularidades e justificativas para determinadas escolhas
-- **Fonte:** OpenSans-Regular.ttf
 
 ## Mockup
 
