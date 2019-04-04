@@ -8,17 +8,16 @@ Desafio iOS
 - Feedback para o usuário e fluidez na navegação ganham pontos
 - Teste unitário -> Qualquer framework, mas explique no readme as vantagens.
 - Faça um readme informando particularidades e justificativas para determinadas escolhas
-- **Fonte:** OpenSans-Regular.ttf
 
 ## Mockup
 
 ### Inicial
 
-![](https://raw.githubusercontent.com/grupofleury/android-desafio/master/heroscreen.jpg)
+![](https://raw.githubusercontent.com/feliperius/ios-desafio/master/layout_teste.png)
 
 ## API
 
-Estamos utilizando uma abstração do que temos internamente, usando o [mockAPI](www.mockapi.io).
+Estamos utilizando uma abstração do que temos internamente, usando o mockAPI.
 
 - As datas estão em milisegundos (UTC), devem ser formatadas para o TimeZone do local do celular e exibidas conforme o mockup
 - O atributo `healthy` determina se é positiva ou negativa a situação, está no formato `Boolean`
