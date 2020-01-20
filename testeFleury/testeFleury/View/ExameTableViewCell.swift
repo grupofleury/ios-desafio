@@ -27,7 +27,6 @@ class ExameTableViewCell: UITableViewCell {
         shadowView.backgroundColor = UIColor.white
         shadowView.layer.shadowColor = UIColor.gray.cgColor
         shadowView.layer.shadowOffset = .zero
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

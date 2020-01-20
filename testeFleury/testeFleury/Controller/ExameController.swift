@@ -11,12 +11,15 @@ import Foundation
 class ExameController {
     
     var exames: Exames?
+    var examFiltered: Exames?
+    
     private var provider: ExamesProvider = ExamesProvider()
     
     func getExame(completion: @escaping (Bool) -> Void){
         provider.fleuryExames(completion: { (exames, sucess) in
             if sucess{
                 self.exames = exames
+                self.examFiltered = exames
                 completion(true)
             }else{
                 completion(false)
@@ -25,11 +28,22 @@ class ExameController {
     }
     
     func  numberOfItemsInSection() -> Int {
-        self.exames?.count ?? 0
+        self.examFiltered?.count ?? 0
     }
     
     func getItemByIndex(indexPath: IndexPath) -> ExameElement {
-        return self.exames?[indexPath.row] ?? ExameElement(id: 0, name: "", doctor: "", timestamp: 0, healthy: false)
+        return self.examFiltered?[indexPath.row] ?? ExameElement(id: 0, name: "", doctor: "", timestamp: 0, healthy: false)
+    }
+    
+    func filter(searchString: String, completion: (Bool) ->Void) {
+        if searchString.isEmpty {
+            self.examFiltered = self.exames
+        } else {
+            self.examFiltered = self.exames?.filter{
+                $0.name.localizedCaseInsensitiveContains(searchString)
+            }
+        }
+        completion(true)
     }
 }
 

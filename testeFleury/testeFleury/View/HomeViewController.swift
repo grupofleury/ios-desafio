@@ -9,9 +9,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var examesTableVIew: UITableView!
-     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var controller = ExameController()
     
     
@@ -20,15 +21,16 @@ class HomeViewController: UIViewController {
         
         setupTableView()
         getExame()
-        
     }
-
+    
     func setupTableView() {
+        self.searchBar.delegate = self
         self.examesTableVIew.tableFooterView = UIView()
         self.examesTableVIew.delegate = self
         self.examesTableVIew.dataSource = self
         examesTableVIew.register(UINib(nibName: "ExameTableViewCell", bundle: nil), forCellReuseIdentifier: "ExameTableViewCell")
     }
+    
     
     func getExame() {
         controller.getExame { (sucess) in
@@ -54,3 +56,17 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         return cell ?? UITableViewCell()
     }
 }
+
+extension HomeViewController: UISearchBarDelegate,UITextFieldDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        controller.filter(searchString: searchText) { (_) in
+            self.examesTableVIew.reloadData()
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+}
+

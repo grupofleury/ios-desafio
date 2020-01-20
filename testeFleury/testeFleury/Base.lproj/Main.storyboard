@@ -41,6 +41,7 @@
                     </view>
                     <connections>
                         <outlet property="examesTableVIew" destination="q0k-QG-wz4" id="og6-Mt-nk4"/>
+                        <outlet property="searchBar" destination="veC-rk-USz" id="7ns-9I-jbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
