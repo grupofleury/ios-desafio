@@ -15,4 +15,4 @@ struct ExameElement: Codable {
     let healthy: Bool
 }
 
-typealias Exame = [ExameElement]
+typealias Exames = [ExameElement]

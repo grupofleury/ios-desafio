@@ -9,20 +9,19 @@
 import Foundation
 import Alamofire
 
-class ExamesFleury{
+class ExamesProvider {
     
-    func fleuryExames(completion: @escaping (ExameElement?,Bool) -> Void ){
+    func fleuryExames(completion: @escaping (Exames?,Bool) -> Void ){
         
-        let urlString: String =  "http://5bfbefa5cf9d29001345c529.mockapi.io/api/v1/results/"
+        let urlString: String =  "https://5bfbefa5cf9d29001345c529.mockapi.io/api/v1/results/"
         
         if let url: URL = URL(string: urlString){
             Alamofire.request(url, method: .get).responseJSON { (response) in
                 if response.response?.statusCode == 200{
-                    
                     do{
                         if let data = response.data {
                             let object = try
-                                JSONDecoder().decode(ExameElement.self, from: data)
+                                JSONDecoder().decode(Exames.self, from: data)
                             print(object)
                             completion(object, true)
                         } else {

@@ -7,18 +7,16 @@
 //
 
 import Foundation
-class ExameController{
+
+class ExameController {
     
-    
-    let exame  = ExamesFleury()
-    
-    private var desafio: ExameElement?
-    var exameProvier: Exame?
+    var exames: Exames?
+    private var provider: ExamesProvider = ExamesProvider()
     
     func getExame(completion: @escaping (Bool) -> Void){
-        exame.fleuryExames(completion: { (exame, sucess) in
+        provider.fleuryExames(completion: { (exames, sucess) in
             if sucess{
-                self.desafio = exame
+                self.exames = exames
                 completion(true)
             }else{
                 completion(false)
@@ -26,12 +24,12 @@ class ExameController{
         })
     }
     
-    func  numberOfItemsInSection() -> Int{
-        self.exameProvier?.count ?? 0
+    func  numberOfItemsInSection() -> Int {
+        self.exames?.count ?? 0
     }
     
-    func getItemByIndex(indexPath: IndexPath) -> ExameElement{
-        return self.exameProvier?[indexPath.row] ?? ExameElement(id: 0, name: "", doctor: "", timestamp: 0, healthy: false)
+    func getItemByIndex(indexPath: IndexPath) -> ExameElement {
+        return self.exames?[indexPath.row] ?? ExameElement(id: 0, name: "", doctor: "", timestamp: 0, healthy: false)
     }
 }
 
