@@ -45,8 +45,11 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = examesTableVIew.dequeueReusableCell(withIdentifier: "ExameTableViewCell", for: indexPath) as? ExameTableViewCell
+        
+        let exame = ExameTableViewCellController(exame: controller.getItemByIndex(indexPath: indexPath))
+        cell?.setup(exame: exame)
+        
         
         return cell ?? UITableViewCell()
     }
