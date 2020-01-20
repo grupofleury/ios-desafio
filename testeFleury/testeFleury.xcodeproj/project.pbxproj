@@ -149,10 +149,10 @@
 			children = (
 				B9AE658623D52AB700836499 /* AppDelegate.swift */,
 				B9AE658823D52AB700836499 /* SceneDelegate.swift */,
-				B9AE658C23D52AB700836499 /* Main.storyboard */,
 				B9AE658F23D52ABA00836499 /* Assets.xcassets */,
 				B9AE659123D52ABA00836499 /* LaunchScreen.storyboard */,
 				B9AE659423D52ABA00836499 /* Info.plist */,
+				B9D682C823D54EFA0091860F /* Storyboad */,
 				B9AE65BF23D52E8800836499 /* View */,
 				B9AE65BC23D52D4E00836499 /* Provider */,
 				B9AE65BE23D52D6000836499 /* Model */,
@@ -211,10 +211,26 @@
 			isa = PBXGroup;
 			children = (
 				B9AE658A23D52AB700836499 /* HomeViewController.swift */,
+				B9D682C723D54EDF0091860F /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9D682C723D54EDF0091860F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				B9AE65C023D52EC300836499 /* ExameTableViewCell.swift */,
 				B9AE65C123D52EC300836499 /* ExameTableViewCell.xib */,
 			);
-			path = View;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B9D682C823D54EFA0091860F /* Storyboad */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE658C23D52AB700836499 /* Main.storyboard */,
+			);
+			path = Storyboad;
 			sourceTree = "<group>";
 		};
 		F9BB2B7037FC9467A6A724E5 /* Frameworks */ = {

@@ -15,22 +15,24 @@ class HomeViewController: UIViewController {
     
     var controller = ExameController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSearchBar()
         setupTableView()
         getExame()
     }
     
-    func setupTableView() {
+    func setupSearchBar() {
         self.searchBar.delegate = self
+    }
+    
+    func setupTableView() {
         self.examesTableVIew.tableFooterView = UIView()
         self.examesTableVIew.delegate = self
         self.examesTableVIew.dataSource = self
         examesTableVIew.register(UINib(nibName: "ExameTableViewCell", bundle: nil), forCellReuseIdentifier: "ExameTableViewCell")
     }
-    
     
     func getExame() {
         controller.getExame { (sucess) in
@@ -41,7 +43,7 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return controller.numberOfItemsInSection()
     }
@@ -51,7 +53,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         
         let exame = ExameTableViewCellController(exame: controller.getItemByIndex(indexPath: indexPath))
         cell?.setup(exame: exame)
-        
         
         return cell ?? UITableViewCell()
     }
@@ -67,6 +68,5 @@ extension HomeViewController: UISearchBarDelegate,UITextFieldDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
     }
-    
 }
 

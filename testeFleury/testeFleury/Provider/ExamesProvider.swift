@@ -17,7 +17,7 @@ class ExamesProvider {
         case result = "/v1/results/"
     }
     
-    func fleuryExames(completion: @escaping (Exames?,Bool) -> Void ){
+    func fleuryExames(completion: @escaping (Exames?,Bool) -> Void ) {
         
         if let url: URL = URL(string: baseURL+endPoint.result.rawValue) {
             Alamofire.request(url, method: .get).responseJSON { (response) in
