@@ -10,6 +10,8 @@
 		4EB174B3B05FFC31C272C1DE /* Pods_testeFleuryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AEC6BB6406160F3CF7C335 /* Pods_testeFleuryTests.framework */; };
 		B970CB7B23D5368400C530A8 /* ExameTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970CB7A23D5368400C530A8 /* ExameTableViewCellController.swift */; };
 		B970CB7D23D5414700C530A8 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970CB7C23D5414700C530A8 /* Double+Extension.swift */; };
+		B970CB7F23D54B5400C530A8 /* HomeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970CB7E23D54B5400C530A8 /* HomeViewControllerSpec.swift */; };
+		B970CB8123D54C2100C530A8 /* WindowHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970CB8023D54C2100C530A8 /* WindowHelper.swift */; };
 		B9AE658723D52AB700836499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE658623D52AB700836499 /* AppDelegate.swift */; };
 		B9AE658923D52AB700836499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE658823D52AB700836499 /* SceneDelegate.swift */; };
 		B9AE658B23D52AB700836499 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE658A23D52AB700836499 /* HomeViewController.swift */; };
@@ -54,6 +56,8 @@
 		9E0198FF06BB6EDCC50F2E35 /* Pods-testeFleuryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeFleuryTests.debug.xcconfig"; path = "Target Support Files/Pods-testeFleuryTests/Pods-testeFleuryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B970CB7A23D5368400C530A8 /* ExameTableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExameTableViewCellController.swift; sourceTree = "<group>"; };
 		B970CB7C23D5414700C530A8 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		B970CB7E23D54B5400C530A8 /* HomeViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpec.swift; sourceTree = "<group>"; };
+		B970CB8023D54C2100C530A8 /* WindowHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHelper.swift; sourceTree = "<group>"; };
 		B9AE658323D52AB700836499 /* testeFleury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testeFleury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9AE658623D52AB700836499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9AE658823D52AB700836499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			children = (
 				B9AE659D23D52ABA00836499 /* testeFleuryTests.swift */,
 				B9AE659F23D52ABA00836499 /* Info.plist */,
+				B970CB7E23D54B5400C530A8 /* HomeViewControllerSpec.swift */,
+				B970CB8023D54C2100C530A8 /* WindowHelper.swift */,
 			);
 			path = testeFleuryTests;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				B9AE659523D52ABA00836499 /* Sources */,
 				B9AE659623D52ABA00836499 /* Frameworks */,
 				B9AE659723D52ABA00836499 /* Resources */,
+				0C7120FCDC349133DD2EF72A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +361,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C7120FCDC349133DD2EF72A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testeFleuryTests/Pods-testeFleuryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testeFleuryTests/Pods-testeFleuryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testeFleuryTests/Pods-testeFleuryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		88CFF3B21D574E55F542847C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,6 +501,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B970CB7F23D54B5400C530A8 /* HomeViewControllerSpec.swift in Sources */,
+				B970CB8123D54C2100C530A8 /* WindowHelper.swift in Sources */,
 				B9AE659E23D52ABA00836499 /* testeFleuryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
