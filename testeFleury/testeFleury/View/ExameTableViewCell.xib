@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExameTableViewCell" rowHeight="160" id="KGk-i7-Jjw" customClass="ExameTableViewCell" customModule="testeFleury" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwd-YT-0Bi">
+                        <rect key="frame" x="20" y="20" width="230" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YER-bi-fZ3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXF-16-doF">
+                        <rect key="frame" x="20" y="88" width="280" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="JG1-5P-8IP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/03/2010" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rm-BP-s7Z">
+                        <rect key="frame" x="186" y="119" width="114" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TM3-tM-SsB"/>
+                            <constraint firstAttribute="width" constant="114" id="t13-vn-s05"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-13-Ig9">
+                        <rect key="frame" x="260" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="NgX-9q-Lbv"/>
+                            <constraint firstAttribute="height" constant="40" id="ZCJ-fI-pgv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stn-dR-Y4T">
+                        <rect key="frame" x="20" y="119" width="146" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TgI-0e-UPQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Stn-dR-Y4T" secondAttribute="bottom" constant="20" id="6qf-s0-g9D"/>
+                    <constraint firstAttribute="trailing" secondItem="DXF-16-doF" secondAttribute="trailing" constant="20" id="9wc-7M-dwZ"/>
+                    <constraint firstItem="Stn-dR-Y4T" firstAttribute="top" secondItem="DXF-16-doF" secondAttribute="bottom" constant="10" id="Ccz-wc-Arr"/>
+                    <constraint firstItem="iWm-13-Ig9" firstAttribute="leading" secondItem="Zwd-YT-0Bi" secondAttribute="trailing" constant="10" id="GRg-hc-E1R"/>
+                    <constraint firstItem="Zwd-YT-0Bi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Knr-sQ-92y"/>
+                    <constraint firstItem="Zwd-YT-0Bi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nly-ye-1vO"/>
+                    <constraint firstAttribute="trailing" secondItem="iWm-13-Ig9" secondAttribute="trailing" constant="20" id="UqI-kd-DA4"/>
+                    <constraint firstItem="9rm-BP-s7Z" firstAttribute="leading" secondItem="Stn-dR-Y4T" secondAttribute="trailing" constant="20" id="fdC-Wj-KYq"/>
+                    <constraint firstAttribute="trailing" secondItem="9rm-BP-s7Z" secondAttribute="trailing" constant="20" id="h8a-Rb-dba"/>
+                    <constraint firstItem="DXF-16-doF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="nSf-Fh-Sv4"/>
+                    <constraint firstItem="Stn-dR-Y4T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="odf-rl-QXX"/>
+                    <constraint firstItem="iWm-13-Ig9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="rPI-b8-zky"/>
+                    <constraint firstAttribute="bottom" secondItem="9rm-BP-s7Z" secondAttribute="bottom" constant="20" id="x2k-Ii-l9i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="date" destination="9rm-BP-s7Z" id="elM-uy-ILF"/>
+                <outlet property="doctorName" destination="Stn-dR-Y4T" id="sH7-24-Yrm"/>
+                <outlet property="imageHealthy" destination="iWm-13-Ig9" id="Pyp-xH-bEf"/>
+                <outlet property="job" destination="DXF-16-doF" id="xTg-60-1C9"/>
+                <outlet property="name" destination="Zwd-YT-0Bi" id="8aw-Ms-dPW"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="156.69642857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
