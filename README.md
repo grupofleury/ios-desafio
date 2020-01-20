@@ -1,3 +1,21 @@
+====
+
+## Arquitetura
+
+- Foi utilizado arquitetura MVC, porque tenho mais familiaridade com ela do que as outras
+
+## Testes
+
+- Utilizei o quick/Nimble e Nimble_snapshot por ter uma sintaxe mais facil 
+
+## Justificativa: 
+
+- Utilizei MVC por ter mais familiaridade. 
+- Utilizei o Alamofire para realizar as requests por facilitar nas requisições
+- Utilizei o quick/nimbe e nimble_snapshot por ter uma sintaxe mais facil para escrever teste
+- Utilizei uma extension de Double para facilitar a conversão do timestamp para date
+
+====
 Desafio iOS
 ====
 
