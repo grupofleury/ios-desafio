@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47A42E0486B154B3E1539471 /* Pods_DesafioFleury.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBBA6BDF8D443FEEE8402F3 /* Pods_DesafioFleury.framework */; };
+		8A29A07823660A3200CAD11A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29A07723660A3200CAD11A /* AppDelegate.swift */; };
+		8A29A07A23660A3200CAD11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29A07923660A3200CAD11A /* ViewController.swift */; };
+		8A29A07D23660A3200CAD11A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A29A07B23660A3200CAD11A /* Main.storyboard */; };
+		8A29A07F23660A3400CAD11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A29A07E23660A3400CAD11A /* Assets.xcassets */; };
+		8A29A08223660A3400CAD11A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A29A08023660A3400CAD11A /* LaunchScreen.storyboard */; };
+		8AB2EDEC2366105900162DAD /* ExamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2EDEB2366105900162DAD /* ExamProvider.swift */; };
+		8AB2EDEE236610F400162DAD /* ExamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2EDED236610F400162DAD /* ExamModel.swift */; };
+		8AB2EDF12366122F00162DAD /* ExamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2EDEF2366122F00162DAD /* ExamCell.swift */; };
+		8AB2EDF22366122F00162DAD /* ExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2EDF02366122F00162DAD /* ExamCell.xib */; };
+		8AB2EDF52366126700162DAD /* ExamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2EDF42366126700162DAD /* ExamController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		051A8BCCB41CB50FC7F0F75C /* Pods-DesafioFleury.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFleury.debug.xcconfig"; path = "Target Support Files/Pods-DesafioFleury/Pods-DesafioFleury.debug.xcconfig"; sourceTree = "<group>"; };
+		5DBBA6BDF8D443FEEE8402F3 /* Pods_DesafioFleury.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioFleury.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A29A07423660A3200CAD11A /* DesafioFleury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioFleury.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A29A07723660A3200CAD11A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A29A07923660A3200CAD11A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A29A07C23660A3200CAD11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A29A07E23660A3400CAD11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A29A08123660A3400CAD11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A29A08323660A3400CAD11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AB2EDEB2366105900162DAD /* ExamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamProvider.swift; sourceTree = "<group>"; };
+		8AB2EDED236610F400162DAD /* ExamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamModel.swift; sourceTree = "<group>"; };
+		8AB2EDEF2366122F00162DAD /* ExamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamCell.swift; sourceTree = "<group>"; };
+		8AB2EDF02366122F00162DAD /* ExamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamCell.xib; sourceTree = "<group>"; };
+		8AB2EDF42366126700162DAD /* ExamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamController.swift; sourceTree = "<group>"; };
+		F51AAFC3F7F0ACA0755FD431 /* Pods-DesafioFleury.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFleury.release.xcconfig"; path = "Target Support Files/Pods-DesafioFleury/Pods-DesafioFleury.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A29A07123660A3200CAD11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A42E0486B154B3E1539471 /* Pods_DesafioFleury.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EE96FB3379C2C33CA3E0CEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DBBA6BDF8D443FEEE8402F3 /* Pods_DesafioFleury.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A29A06B23660A3200CAD11A = {
+			isa = PBXGroup;
+			children = (
+				8A29A07623660A3200CAD11A /* DesafioFleury */,
+				8A29A07523660A3200CAD11A /* Products */,
+				C9B047B29F96B68904625FAE /* Pods */,
+				4EE96FB3379C2C33CA3E0CEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A29A07523660A3200CAD11A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A29A07423660A3200CAD11A /* DesafioFleury.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A29A07623660A3200CAD11A /* DesafioFleury */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2EDF32366123800162DAD /* CustomCell */,
+				8A29A08D23660A6700CAD11A /* Provider */,
+				8A29A08A23660A4900CAD11A /* Controller */,
+				8A29A08C23660A5E00CAD11A /* View */,
+				8A29A08923660A4100CAD11A /* Model */,
+				8A29A07723660A3200CAD11A /* AppDelegate.swift */,
+				8A29A07E23660A3400CAD11A /* Assets.xcassets */,
+				8A29A08023660A3400CAD11A /* LaunchScreen.storyboard */,
+				8A29A08323660A3400CAD11A /* Info.plist */,
+			);
+			path = DesafioFleury;
+			sourceTree = "<group>";
+		};
+		8A29A08923660A4100CAD11A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2EDED236610F400162DAD /* ExamModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A29A08A23660A4900CAD11A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2EDF42366126700162DAD /* ExamController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A29A08C23660A5E00CAD11A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A29A07B23660A3200CAD11A /* Main.storyboard */,
+				8A29A07923660A3200CAD11A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A29A08D23660A6700CAD11A /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2EDEB2366105900162DAD /* ExamProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		8AB2EDF32366123800162DAD /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2EDEF2366122F00162DAD /* ExamCell.swift */,
+				8AB2EDF02366122F00162DAD /* ExamCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		C9B047B29F96B68904625FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				051A8BCCB41CB50FC7F0F75C /* Pods-DesafioFleury.debug.xcconfig */,
+				F51AAFC3F7F0ACA0755FD431 /* Pods-DesafioFleury.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A29A07323660A3200CAD11A /* DesafioFleury */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A29A08623660A3400CAD11A /* Build configuration list for PBXNativeTarget "DesafioFleury" */;
+			buildPhases = (
+				39DCBB595AD3E3DFA2B25B42 /* [CP] Check Pods Manifest.lock */,
+				8A29A07023660A3200CAD11A /* Sources */,
+				8A29A07123660A3200CAD11A /* Frameworks */,
+				8A29A07223660A3200CAD11A /* Resources */,
+				C04A57E1597A4BF803F8181B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioFleury;
+			productName = DesafioFleury;
+			productReference = 8A29A07423660A3200CAD11A /* DesafioFleury.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A29A06C23660A3200CAD11A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Camila Carvalho";
+				TargetAttributes = {
+					8A29A07323660A3200CAD11A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 8A29A06F23660A3200CAD11A /* Build configuration list for PBXProject "DesafioFleury" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A29A06B23660A3200CAD11A;
+			productRefGroup = 8A29A07523660A3200CAD11A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A29A07323660A3200CAD11A /* DesafioFleury */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A29A07223660A3200CAD11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB2EDF22366122F00162DAD /* ExamCell.xib in Resources */,
+				8A29A08223660A3400CAD11A /* LaunchScreen.storyboard in Resources */,
+				8A29A07F23660A3400CAD11A /* Assets.xcassets in Resources */,
+				8A29A07D23660A3200CAD11A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DCBB595AD3E3DFA2B25B42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioFleury-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C04A57E1597A4BF803F8181B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioFleury/Pods-DesafioFleury-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioFleury/Pods-DesafioFleury-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioFleury/Pods-DesafioFleury-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A29A07023660A3200CAD11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A29A07A23660A3200CAD11A /* ViewController.swift in Sources */,
+				8AB2EDEC2366105900162DAD /* ExamProvider.swift in Sources */,
+				8AB2EDF52366126700162DAD /* ExamController.swift in Sources */,
+				8AB2EDEE236610F400162DAD /* ExamModel.swift in Sources */,
+				8A29A07823660A3200CAD11A /* AppDelegate.swift in Sources */,
+				8AB2EDF12366122F00162DAD /* ExamCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A29A07B23660A3200CAD11A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A29A07C23660A3200CAD11A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A29A08023660A3400CAD11A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A29A08123660A3400CAD11A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A29A08423660A3400CAD11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A29A08523660A3400CAD11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A29A08723660A3400CAD11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 051A8BCCB41CB50FC7F0F75C /* Pods-DesafioFleury.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4X8JLHJL;
+				INFOPLIST_FILE = DesafioFleury/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Camila-Carvalho.DesafioFleury";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A29A08823660A3400CAD11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51AAFC3F7F0ACA0755FD431 /* Pods-DesafioFleury.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4X8JLHJL;
+				INFOPLIST_FILE = DesafioFleury/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Camila-Carvalho.DesafioFleury";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A29A06F23660A3200CAD11A /* Build configuration list for PBXProject "DesafioFleury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A29A08423660A3400CAD11A /* Debug */,
+				8A29A08523660A3400CAD11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A29A08623660A3400CAD11A /* Build configuration list for PBXNativeTarget "DesafioFleury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A29A08723660A3400CAD11A /* Debug */,
+				8A29A08823660A3400CAD11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A29A06C23660A3200CAD11A /* Project object */;
+}
