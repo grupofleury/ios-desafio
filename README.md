@@ -3,11 +3,10 @@ Desafio iOS
 
 ## Requisitos
 
-- Aplicar alguma arquitetura e justificar
-- Framework para consumir os dados da API
-- Feedback para o usuário e fluidez na navegação ganham pontos
-- Teste unitário -> Qualquer framework, mas explique no readme as vantagens.
-- Faça um readme informando particularidades e justificativas para determinadas escolhas
+- Aplicado arquitetura MVC
+- Utilizado Alamofire para consumo de API
+- UIKit e Storyboard
+- Implementação da função de busca na searchBar
 
 ## Mockup
 
@@ -48,14 +47,14 @@ Retorna a lista de resultados de exames disponíveis para o usuário.
 ]
 ````
 
-**O que precisa ser feito nessa tela:**
+**O que precisa ser feito nessa tela:** -- OK
  - Mostrar os `items` em um card conforme layout
  
-## Como submeter?
+## Como submeter? -- OK
 
 Deverá ser enviado um PULL REQUEST com o seu teste.
 
-### Como funciona?
+### Como funciona? -- OK
 
 - Fork deste repositório
 - Clonar a partir do repositório que foi criada na sua conta
